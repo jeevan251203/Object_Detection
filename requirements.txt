@@ -1,0 +1,7 @@
+# requirements.txt
+
+# Install PyTorch with GPU support
+torch==2.4.0+cu121  # Ensure this matches your CUDA version
+
+# Install Ultralytics
+ultralytics # Latest version recommended
