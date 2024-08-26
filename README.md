@@ -42,7 +42,7 @@ This guide provides step-by-step instructions to train a YOLOv8 model on a custo
 ## Configuration
 
 1. **Create a configuration file:**
-    - Open `yolov8.yaml` and customize it for your dataset:
+    - Open `train.yaml` and customize it for your dataset:
         ```yaml
         train: dataset/images/train
         val: dataset/images/val
