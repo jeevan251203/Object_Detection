@@ -14,7 +14,6 @@ This guide provides step-by-step instructions to train a YOLOv8 model on a custo
 1. **Clone the YOLOv8 repository:**
     ```bash
     git clone https://github.com/ultralytics/yolov8
-    cd yolov8
     ```
 
 2. **Install dependencies:**
@@ -47,7 +46,7 @@ This guide provides step-by-step instructions to train a YOLOv8 model on a custo
         ```yaml
         train: dataset/images/train
         val: dataset/images/val
-        nc: 80  # number of classes
+        nc: 5  # number of classes
         names: ['class1', 'class2', ...]  # class names
         ```
 
