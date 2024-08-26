@@ -1,0 +1,10 @@
+
+path:   # path to the root dir
+train: images/train  # train images (relative to 'path')
+val: images/val  # val images (relative to 'path')
+
+# Classes
+names:
+  0: #class name 1
+  1: #class name 2
+  #..
