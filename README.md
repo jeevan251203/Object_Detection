@@ -54,41 +54,13 @@ This guide provides step-by-step instructions to train a YOLOv8 model on a custo
 
 1. **Initialize the YOLOv8 model:**
     ```bash
-    python train.py --data yolov8.yaml --cfg yolov8.yaml --weights yolov8.pt --epochs 100
-    ```
-
-2. **Monitor training:**
-    - Use tools like TensorBoard to monitor the training process:
-        ```bash
-        tensorboard --logdir=runs
-        ```
-
-## Evaluation
-
-1. **Evaluate the model:**
-    ```bash
-    python val.py --data yolov8.yaml --weights runs/train/exp/weights/best.pt
+    yolo detect train data=train.yaml model=yolov8n.pt epochs=100 imgsz=640 device=0
     ```
 
 ## Inference
 
 1. **Run inference on new images:**
     ```bash
-    python detect.py --weights runs/train/exp/weights/best.pt --source path/to/your/images
+    yolo predict model="path/to/your/trained/pt_file" source="path/to/your/image_or_video"
     ```
 
-## Conclusion
-
-By following these steps, you can train a YOLOv8 model on your custom dataset. For more details, refer to the YOLOv8 documentation.
-
-## FAQ
-
-- **How do I annotate my dataset?**
-  Use tools like LabelImg or Roboflow to annotate your images in YOLO format.
-
-- **How do I monitor training?**
-  Use TensorBoard to visualize training metrics.
-
----
-
-Feel free to customize this guide based on your specific requirements and dataset. Happy training!
